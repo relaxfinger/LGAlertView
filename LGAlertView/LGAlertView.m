@@ -806,7 +806,12 @@ LGAlertViewType;
         _backgroundBlurEffect = nil;
         _textFieldsHeight = 44.0;
         _offsetVertical = 8.0;
-        _cancelButtonOffsetY = 8.0;
+        
+        if (@available(iOS 11.0, *)) {
+            _cancelButtonOffsetY = 34.0;
+        } else {
+            _cancelButtonOffsetY = 8.0;
+        }
         _heightMax = NSNotFound;
         _width = NSNotFound;
         _separatorsColor = [UIColor colorWithWhite:0.85 alpha:1.0];
