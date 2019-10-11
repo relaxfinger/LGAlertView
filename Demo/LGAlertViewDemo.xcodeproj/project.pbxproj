@@ -224,6 +224,7 @@
 				TargetAttributes = {
 					4A3B785F1AD2A28200DB8642 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z56V47Q9TW;
 					};
 				};
 			};
@@ -398,7 +399,7 @@
 		4A3B78841AD2A28300DB8642 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z56V47Q9TW;
 				INFOPLIST_FILE = LGAlertViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -411,7 +412,7 @@
 		4A3B78851AD2A28300DB8642 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = Z56V47Q9TW;
 				INFOPLIST_FILE = LGAlertViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

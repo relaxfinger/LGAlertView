@@ -808,7 +808,8 @@ LGAlertViewType;
         _offsetVertical = 8.0;
         
         if (@available(iOS 11.0, *)) {
-            _cancelButtonOffsetY = 34.0;
+            CGFloat safeareaBottonHeight = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom;
+            _cancelButtonOffsetY = safeareaBottonHeight ? safeareaBottonHeight : 8;
         } else {
             _cancelButtonOffsetY = 8.0;
         }
