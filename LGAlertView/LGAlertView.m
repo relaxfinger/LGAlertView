@@ -2458,6 +2458,10 @@ LGAlertViewType;
                                                     forState:UIControlStateSelected];
                         [self.firstButton setBackgroundColor:(properties.isUserBackgroundColorDisabled ? properties.backgroundColorDisabled : self.buttonsBackgroundColorDisabled)
                                                     forState:UIControlStateDisabled];
+                        if (properties.isUserBackgroundImage) {
+                            [self.firstButton setBackgroundImage:properties.backgroundImage forState:UIControlStateNormal];
+                            [self.firstButton setBackgroundImage:properties.backgroundImage forState:UIControlStateHighlighted];
+                        }
 
                         UIImage *image = nil;
                         if (properties.isUserIconImage) {
@@ -2547,6 +2551,10 @@ LGAlertViewType;
                                                          forState:UIControlStateSelected];
                             [self.secondButton setBackgroundColor:(properties.isUserBackgroundColorDisabled ? properties.backgroundColorDisabled : self.buttonsBackgroundColorDisabled)
                                                          forState:UIControlStateDisabled];
+                            if (properties.isUserBackgroundImage) {
+                                [self.secondButton setBackgroundImage:properties.backgroundImage forState:UIControlStateNormal];
+                                [self.secondButton setBackgroundImage:properties.backgroundImage forState:UIControlStateHighlighted];
+                            }
 
                             UIImage *image = nil;
                             if (properties.isUserIconImage) {
@@ -2636,6 +2644,10 @@ LGAlertViewType;
                                                             forState:UIControlStateSelected];
                                 [self.thirdButton setBackgroundColor:(properties.isUserBackgroundColorDisabled ? properties.backgroundColorDisabled : self.buttonsBackgroundColorDisabled)
                                                             forState:UIControlStateDisabled];
+                                if (properties.isUserBackgroundImage) {
+                                    [self.thirdButton setBackgroundImage:properties.backgroundImage forState:UIControlStateNormal];
+                                    [self.thirdButton setBackgroundImage:properties.backgroundImage forState:UIControlStateHighlighted];
+                                }
 
                                 UIImage *image = nil;
                                 if (properties.isUserIconImage) {

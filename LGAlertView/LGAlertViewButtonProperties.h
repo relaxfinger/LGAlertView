@@ -40,6 +40,8 @@
 @property (strong, nonatomic, nullable) UIColor *backgroundColorHighlighted;
 @property (strong, nonatomic, nullable) UIColor *backgroundColorDisabled;
 
+@property (strong, nonatomic, nullable) UIImage *backgroundImage;
+
 @property (strong, nonatomic, nullable) UIImage *iconImage;
 @property (strong, nonatomic, nullable) UIImage *iconImageHighlighted;
 @property (strong, nonatomic, nullable) UIImage *iconImageDisabled;
@@ -60,6 +62,7 @@
 @property (assign, nonatomic, readonly, getter=isUserBackgroundColor)            BOOL userBackgroundColor;
 @property (assign, nonatomic, readonly, getter=isUserBackgroundColorHighlighted) BOOL userBackgroundColorHighlighted;
 @property (assign, nonatomic, readonly, getter=isUserBackgroundColorDisabled)    BOOL userBackgroundColorDisabled;
+@property (assign, nonatomic, readonly, getter=isUserBackgroundImage)            BOOL userBackgroundImage;
 @property (assign, nonatomic, readonly, getter=isUserIconImage)                  BOOL userIconImage;
 @property (assign, nonatomic, readonly, getter=isUserIconImageHighlighted)       BOOL userIconImageHighlighted;
 @property (assign, nonatomic, readonly, getter=isUserIconImageDisabled)          BOOL userIconImageDisabled;

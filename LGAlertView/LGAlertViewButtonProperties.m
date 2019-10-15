@@ -37,6 +37,7 @@
 @property (readwrite) BOOL userBackgroundColor;
 @property (readwrite) BOOL userBackgroundColorHighlighted;
 @property (readwrite) BOOL userBackgroundColorDisabled;
+@property (readwrite) BOOL userBackgroundImage;
 @property (readwrite) BOOL userIconImage;
 @property (readwrite) BOOL userIconImageHighlighted;
 @property (readwrite) BOOL userIconImageDisabled;
@@ -113,6 +114,11 @@
 - (void)setBackgroundColorDisabled:(UIColor *)backgroundColorDisabled {
     _backgroundColorDisabled = backgroundColorDisabled;
     self.userBackgroundColorDisabled = YES;
+}
+
+- (void)setBackgroundImage:(UIImage *)backgroundImage {
+    _backgroundImage = backgroundImage;
+    self.userBackgroundImage = YES;
 }
 
 - (void)setIconImage:(UIImage *)iconImage {
