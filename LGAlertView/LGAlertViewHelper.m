@@ -32,7 +32,7 @@
 
 #pragma mark - Constants
 
-CGFloat const LGAlertViewPaddingWidth = 10.0;
+CGFloat const LGAlertViewPaddingWidth = 25.0;
 CGFloat const LGAlertViewPaddingHeight = 8.0;
 CGFloat const LGAlertViewButtonImageOffsetFromTitle = 8.0;
 
